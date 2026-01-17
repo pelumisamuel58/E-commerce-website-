@@ -1,15 +1,15 @@
 // 1. Product Data (10 Items)
 const products = [
-    { id: 1, name: "Wireless Mouse", price: 25, image: "images/mouse.jpg" },
-    { id: 2, name: "Keyboard", price: 45, image: "images/keyboard.jpg" },
-    { id: 3, name: "Monitor", price: 150, image: "images/monitor.jpg" },
-    { id: 4, name: "USB-C Cable", price: 12, image: "images/usb_cable.jpg" },
-    { id: 5, name: "Headphones", price: 60, image: "images/headphone.jpg" },
-    { id: 6, name: "Webcam", price: 35, image: "images/webcam.jpg" },
-    { id: 7, name: "Laptop Stand", price: 20, image: "images/laptopstand.jpg" },
-    { id: 8, name: "Desk Lamp", price: 30, image: "images/desklamp.jpg" },
-    { id: 9, name: "External Drive", price: 80, image: "images/external.jpg" },
-    { id: 10, name: "Mousepad", price: 15, image: "images/mousepad.jpg" }
+    { id: 1, name: "Wireless Mouse", price: 6000, image: "https://res.cloudinary.com/dpjnyojeo/image/upload/v1768608061/IMG-20260117-WA0007_mzjrpu.jpg" },
+    { id: 2, name: "Keyboard", price: 4500, image: "https://res.cloudinary.com/dpjnyojeo/image/upload/v1768608146/IMG-20260117-WA0008_mhtxlm.jpg" },
+    { id: 3, name: "Monitor", price: 150000, image: "https://res.cloudinary.com/dpjnyojeo/image/upload/v1768608147/IMG-20260117-WA0009_fn7oyt.jpg" },
+    { id: 4, name: "USB-C Cable", price: 1500, image: "https://res.cloudinary.com/dpjnyojeo/image/upload/v1768608147/IMG-20260117-WA0010_e4ckya.jpg" },
+    { id: 5, name: "Headphones", price: 6000, image: "https://res.cloudinary.com/dpjnyojeo/image/upload/v1768608061/IMG-20260117-WA0006_ezr4mw.jpg" },
+    { id: 6, name: "Webcam", price: 25000, image: "https://res.cloudinary.com/dpjnyojeo/image/upload/v1768608061/IMG-20260117-WA0002_e2wopf.jpg" },
+    { id: 7, name: "Laptop Stand", price: 1000, image: "https://res.cloudinary.com/dpjnyojeo/image/upload/v1768608062/IMG-20260117-WA0003_l3g3k1.jpg" },
+    { id: 8, name: "Desk Lamp", price: 5000, image: "https://res.cloudinary.com/dpjnyojeo/image/upload/v1768608061/IMG-20260117-WA0004_b03r4v.jpg" },
+    { id: 9, name: "External Drive", price: 3000, image: "https://res.cloudinary.com/dpjnyojeo/image/upload/v1768608060/IMG-20260117-WA0001_tysscp.jpg" },
+    { id: 10, name: "Mousepad", price: 2500, image: "https://res.cloudinary.com/dpjnyojeo/image/upload/v1768608061/IMG-20260117-WA0005_ochjma.jpg" }
 ];
 
 let cart = [];
