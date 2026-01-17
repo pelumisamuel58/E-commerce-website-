@@ -1,14 +1,47 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: #f0eded;
 }
 
 header {
-    background: #333;
+    background: #0A0E27;
     color: white;
     padding: 1rem;
+    padding-left: 3rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 1rem;
+    padding-right: 3rem;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+.header-logo img {
+    height: 32px;
+    width: 32px;
+    border-radius: 5%;
+    position: relative;
+    border-style: solid;
+    border-color: #f0eded;
+    border-width: 0.1rem;
+}
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    position: relative;
+    justify-content: right;
+    display: flex;
+}
+
+
+header p {
+    margin: 0;
+    font-size: 0.9rem;
+    position: relative;
 }
 
 .container {
@@ -92,10 +125,9 @@ header {
     padding: 20px;
     border-radius: 8px;
     height: fit-content;
-    position: sticky;
-    top: 20px;
-    width: 90%;
+    width: 100%;
     box-sizing: border-box;
+    position: static;
 }
 
 .cart-item {
