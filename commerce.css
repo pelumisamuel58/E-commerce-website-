@@ -1,0 +1,153 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column; /* Stacked on mobile */
+    padding: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Product Grid */
+.grid {
+    flex: 3;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr; /* Default 1 column */
+}
+.product-img {
+    width: 100%;       /* Fills the card width */
+    height: 200px;     /* Fixed height for uniformity */
+    object-fit: cover; /* Crops the image to fit without stretching */
+    border-radius: 4px;
+    margin-bottom: 10px;
+    object-position: top; /* This tells the browser: "Don't crop the top!" */
+
+}
+
+.product-card {
+    transition: transform 0.2s;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Overlay background */
+.hidden-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The actual white card */
+.confirmation-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+#order-summary {
+    margin: 20px 0;
+    text-align: left;
+    font-size: 0.9rem;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+/* Cart Sidebar */
+.cart-container {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+button {
+    cursor: pointer;
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+.qty-btn {
+    background: #007bff;
+    margin: 0 5px;
+}
+
+
+/* Tablets (600px and up) */
+@media (min-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    }
+}
+
+/* Desktop (992px and up) */
+@media (min-width: 992px) {
+    .container {
+        flex-direction: row; /* Side-by-side layout */
+        align-items: flex-start;
+    }
+
+    .grid {
+        flex: 3;
+        grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    }
+
+    .cart-container {
+        flex: 1;
+        position: sticky;
+        top: 20px; /* Cart stays visible as you scroll products */
+    }
+}
